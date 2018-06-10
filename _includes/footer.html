@@ -1,0 +1,57 @@
+<footer class="footer" role="contentinfo">
+
+  <a class="footer-logo" href="{{ site.url }}">
+    {% include logo.svg.html %}
+  </a>
+
+  <div class="row column">
+    <ul class="social-icons">
+      <li>
+        <a class="twitter" href="https://twitter.com/djangocolombia">
+          <svg class="social-icon">
+            <title>Twitter</title>
+            <use xlink:href="#twitter-icon"></use>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a class="github" href="https://github.com/djangocolombia/">
+          <svg class="social-icon">
+            <title>Github</title>
+            <use xlink:href="#github-icon"></use>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a class="facebook" href="https://www.facebook.com/djangocolombia.co/">
+          <svg class="social-icon">
+            <title>Facebook</title>
+            <use xlink:href="#facebook-icon"></use>
+          </svg>
+        </a>
+      </li>
+
+      {% comment %}
+      <li>
+        <a class="instagram" href="https://www.instagram.com/#TODO/">
+          <svg class="social-icon">
+            <title>Instagram</title>
+            <use xlink:href="#instagram-icon"></use>
+          </svg>
+        </a>
+      </li>
+      {% endcomment %}
+    </ul>
+
+    <p class="text-center">
+      <strong>
+        <a
+          href="mailto:{{site.contact_us_email}}">{{site.contact_us_email}}</a>
+      </strong>
+    </p>
+
+    <small class="legal text-center">
+      &copy; {{ site.time | date: '%Y' }} DjangoColombia
+    </small>
+  </div>
+</footer>

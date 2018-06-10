@@ -1,0 +1,151 @@
+---
+layout: base
+---
+
+<style>
+  .marker {
+    background-image: url('/static/img/logo-small.svg');
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+</style>
+
+<header style="background: url(/static/img/cover.svg); background-size:cover; background-position: 0 100px;
+background-repeat: no-repeat;" class="header">
+  <div class="row">
+    <div class="column small-12 medium-6 header-text">
+      <span style="background:#EF7A39; color:wheat; font-size:2em; font-family: 'Montserrat', sans-serif;">Creemos en comunidades abiertas y pragmáticas de desarrollo</span>
+      <br><br>
+      <div style="color:white" class="row home-eventinfo">
+        <span class="column medium-5 large-4 subheading datesyear">
+          <strong>Sep. 14-19</strong> <br>
+          <span class="datesyear-year">2018</span>
+        </span>
+
+        <span class="column medium-7 large-8 subheading location">
+          Av. 1ra con Calle 29, Galerias. <br>      
+          <strong>Montería, Córdoba</strong>
+        </span>
+      </div>
+      <br />
+      <div class="row">
+        <div style="position: sticky;" class="medium-8 column medium-centered text-center">
+          <a class="button hollow theme-willow" href="#">Subscribete</a>
+        </div>
+      </div>
+
+    </div>
+    <div class="column small-12 medium-6 text-center">
+      <img
+        data-interchange="[{{ "/static/img/ride.svg" | relative_url }}, small], [{{ "/static/img/ride.svg" | relative_url }}, medium]"
+        alt=""
+        class="header-img" width="400" />
+    </div>
+  </div>
+</header>
+
+<div class="home-content">
+<section class="section-pad theme-light-gray">
+  <div class="row column xlarge-9">
+    <p class="lead column large-9 large-centered text-center">Unete y encuentra una comunidad anciosa de compartir conocimiento, experiencias y oportunidades en todo Colombia!</p>
+
+    <div class="date-card medium-4 column">
+      <div class="row collapse">
+        <div class="small-5 column">
+          <div class="dates">
+            <div class="month">Noviembre</div>
+            <div class="days">14</div>
+          </div>
+        </div>
+        <div class="small-7 column">
+          <h2 class="date-card-title">Tutoriales</h2>
+          <p>Para que empieces en el mundillo</p>
+        </div>
+      </div>
+    </div>
+    <div class="date-card medium-4 column">
+      <div class="row collapse">
+        <div class="small-5 column">
+          <div class="dates">
+            <div class="month">Noviembre</div>
+            <div class="days">15-17</div>
+          </div>
+        </div>
+        <div class="small-7 column">
+          <h2 class="date-card-title">Charlas</h2>
+          <p>Para reflexionar y discutir lo nuevo</p>
+        </div>
+      </div>
+    </div>
+    <div class="date-card medium-4 column">
+      <div class="row collapse">
+        <div class="small-5 column">
+          <div class="dates">
+            <div class="month">Diciembre</div>
+            <div class="days">18-19</div>
+          </div>
+        </div>
+        <div class="small-7 column">
+          <h2 class="date-card-title">Sprints</h2>
+          <p>Y por su puesto, la praxis!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-bottom:0;">
+  <div id='map' style='width: 100%; height: 500px;'></div>
+  <script>
+  mapboxgl.accessToken = 'pk.eyJ1IjoianVsaW9jZXNhci1pbyIsImEiOiJjaWtrMmVzbTUwOXNwdGlqN2t5NHFwMDlyIn0.gK8vls8lLT4MhJmBogKjQg';
+  var map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/juliocesar-io/cji8eiggi2k3v2rqzc4tkh5o9'
+  });
+  var geojson = {
+    type: 'FeatureCollection',
+    features: [{
+      type: 'Feature',
+      geometry: {
+        type: 'Point',
+        coordinates: [-75.8814300, 8.7479800]
+      },
+      properties: {
+        title: 'Montería Django',
+        description: 'Comunidad de Python/Django en Montería.'
+      }
+    },
+    {
+      type: 'Feature',
+      geometry: {
+        type: 'Point',
+        coordinates: [-76.66111, 5.69472]
+      },
+      properties: {
+        title: 'Quibdó Django',
+        description: 'Comunidad de Python/Django en Quibdó'
+      }
+    }]
+  };
+  // add markers to map
+  geojson.features.forEach(function(marker) {
+
+    // create a HTML element for each feature
+    var el = document.createElement('div');
+    el.className = 'marker';
+
+    var popup = new mapboxgl.Popup({ offset: 25 })
+    .setText(marker.properties.description);
+
+    // make a marker for each feature and add to the map
+    new mapboxgl.Marker(el)
+    .setLngLat(marker.geometry.coordinates)
+    .setPopup(popup) 
+    .addTo(map);
+  });
+  </script>
+</section>
+</div><!-- end .content -->

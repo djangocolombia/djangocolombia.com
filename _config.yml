@@ -1,0 +1,86 @@
+title: Comunidad Django Colombia
+url: "https://djangocolombia.com"
+author : Django Colombia
+description: |
+  Comunidad de desarrolladores en Python/Django Colombia
+enforce_ssl: "djangocolombia.com"
+relative_permalinks: false
+permalink: news/:title/  # permalink: date
+
+include:
+  - _pages
+
+# Build settings
+markdown: kramdown
+
+plugins:
+  - jekyll-feed
+  - jekyll-redirect-from
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jemoji
+
+exclude:
+  - .editorconfig
+  - .gitignore
+  - .surgeignore
+  - bower_components
+  - CNAME
+  - CODE_OF_CONDUCT.md
+  - CONTRIBUTING.md
+  - deploy_surge.sh
+  - Gemfile
+  - Gemfile.lock
+  - gulpfile.js
+  - LICENSE
+  - node_modules
+  - NOTES.md
+  - package*.json
+  - Procfile
+  - Rakefile
+  - README.md
+  - vendor
+
+# We need `future` to allow our schedule to work :/
+future: true
+
+collections:  # process the _data folder
+  components:
+    output: false
+  schedule:
+    output: true
+    permalink: /:collection/:name/
+  organizers:
+    output: false
+    permalink: /:collection/
+  sponsors:
+    output: false
+    permalink: /:collection/
+  places:
+    output: false
+    permalink: /:collection/
+
+# SEO Plugin settings
+
+twitter:
+  username: djangocolombia
+
+# This is the default logo that people see with opengraph
+logo: /static/img/logo-small.png
+
+
+# Frontmatter fallback settings
+# This is the default logo that people see on blog posts
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /static/img/logo-small.png
+
+contact_us_email: "hola@djangocolombia.com"
+
+
+
+github: [metadata]
+facebook:
+  app_id: 0000000000000000

@@ -1,0 +1,69 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% seo %}
+
+{% if page.video_url != blank %}
+{% assign youtube_id = page.video_url | replace:"https://youtu.be/",""%}
+{% include youtube-embed-head.html id=youtube_id %}
+{% endif %}
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700,700i|Signika:600,700" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/styles.css">
+
+    <!-- favicon
+    ================================================== -->
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/static/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/static/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/static/favicons/site.webmanifest">
+    <link rel="mask-icon" href="/static/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/static/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#b91d47">
+    <meta name="msapplication-config" content="/static/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.45.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.45.0/mapbox-gl.css' rel='stylesheet' />
+
+    
+    
+  </head>
+  <body class="{{ page.layout }}-page">
+   {% include social-icons.html %}
+
+    <div class="off-canvas-wrapper">
+      <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+        <div class="off-canvas position-right" id="offCanvasRight" data-off-canvas data-position="right">
+            <ul class="vertical menu drilldown" data-drilldown>
+              {% include nav.html %}
+            </ul>
+        </div>
+
+        <div class="off-canvas-content" data-off-canvas-content>
+          {% include titlebar.html %}
+
+          {{ content }}
+
+          {% include footer.html %}
+        </div><!-- end .off-canvas-content -->
+      </div><!-- end .off-canvas-wrapper-inner -->
+    </div><!-- end .off-canvas-wrapper -->
+
+
+
+    <!-- Loading JavaScripts
+    ================================================== -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="/static/js/jquery.min.js"><\/script>')</script>
+    <script src="/static/js/what-input.min.js"></script>
+    <script src="/static/js/foundation.min.js"></script>
+    <script src="/static/js/headroom.min.js"></script>
+    <script src="/static/js/main.js"></script>
+    {% include analytics.html %}
+  </body>
+</html>

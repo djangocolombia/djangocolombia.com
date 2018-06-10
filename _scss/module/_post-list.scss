@@ -1,0 +1,22 @@
+.post-item {
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid $dark-gray;
+  @include bottomless;
+}
+
+.post-title {
+  font-weight: $global-weight-normal;
+}
+
+.post-title a {
+  color: $secondary-color;
+
+  &:hover {
+    color: $primary-color;
+  }
+}
+
+.post-item:last-child {
+  border-bottom: none;
+}

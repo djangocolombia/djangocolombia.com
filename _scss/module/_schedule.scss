@@ -1,0 +1,194 @@
+%has-bg {
+  background: $light-gray;
+
+  .location {
+    position: absolute;
+    top: 4px;
+    right: 10px;
+    font-size: 0.8em;
+  }
+}
+
+.schedule {
+  margin: 0;
+  padding-right: 0;
+  padding-left: 0;
+  list-style: none;
+
+  .day {
+    font-weight: $global-weight-normal;
+  }
+
+  .day,
+  .lead {
+    text-align: center;
+  }
+}
+
+.time {
+  display: block;
+  margin-bottom: 1rem;
+  font-size: rem-calc(24px);
+  text-align: center;
+
+  .muted:before {
+    content: " – ";
+  }
+}
+
+.events {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.event {
+  @include clearfix;
+  @include bottomless;
+
+  position: relative;
+  margin: 0 0 1em;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+
+  a {
+    text-decoration: none;
+  }
+
+  .location,
+  a:hover {
+    color: $black;
+  }
+
+  a:hover .event-title {
+    color: $secondary-color;
+  }
+
+  a:hover .event-byline {
+    color: $body-font-color;
+  }
+
+  .event-content {
+    @include bottomless;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+
+  .event-byline {
+    margin-top: auto;
+    padding-top: $global-margin * 2;
+  }
+
+  .label {
+    align-self: center;
+  }
+
+  .avatar {
+    margin: 0 .5em 0 0;
+    max-width: 60px;
+    border-radius: 50%;
+    vertical-align: middle;
+  }
+}
+
+// Fallback style, mostly used on Why DjangoCon US?
+.event.boxed {
+  padding: $global-margin;
+  border: 1px solid $medium-gray;
+  background: $white;
+
+  .event-content {
+    display: block;
+  }
+
+  .event-byline {
+    margin-top: $global-margin;
+    padding-top: 0;
+  }
+}
+
+.event-title {
+  margin-bottom: .5rem;
+  font-size: rem-calc(24px);
+}
+
+// Handle variations
+.event.loc-main {
+  @extend %has-bg;
+  border-top: 8px solid $festival;
+}
+
+.event.loc-main .location {
+  background: $light-gray;
+}
+
+.event.loc-alt {
+  @extend %has-bg;
+  border-top: 8px solid $orchid;
+}
+
+.event.loc-alt-2 {
+  @extend %has-bg;
+  border-top: 8px solid $violetred;
+}
+
+.event.loc-alt-3 {
+  @extend %has-bg;
+  border-top: 8px solid $sienna;
+}
+
+.event.loc-main,
+.event.loc-alt,
+.event.loc-alt-2,
+.event.loc-alt-3 {
+  padding: ($global-margin * 1.75) $global-margin $global-margin;
+}
+
+@include breakpoint(medium) {
+  .hour-row {
+    padding: $global-margin 0;
+  }
+
+  .events {
+    display: flex;
+  }
+
+  .event {
+    display: flex;
+    flex-direction: column;
+    margin: 0 $global-margin / 2;
+    text-align: left;
+    flex-grow: 1;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .event .label {
+    display: inline-block;
+    align-self: flex-start;
+    margin-left: 0;
+  }
+
+  .time {
+    margin-bottom: 0;
+    font-size: rem-calc(18px);
+    text-align: right;
+
+    .muted {
+      display: block;
+      opacity: 0.6;
+    }
+
+    .muted:before {
+      content: "";
+    }
+  }
+}
