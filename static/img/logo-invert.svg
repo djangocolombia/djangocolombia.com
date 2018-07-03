@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="114.98669mm"
+   height="19.23912mm"
+   viewBox="0 0 114.98668 19.239121"
+   version="1.1"
+   id="svg853"
+   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)"
+   sodipodi:docname="logo-invert.svg"
+   inkscape:export-filename="C:\Users\julio\Desktop\Projects\reegis-new\reegis-app\src\assets\logo-i.png"
+   inkscape:export-xdpi="32.330002"
+   inkscape:export-ydpi="32.330002">
+  <defs
+     id="defs847" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4"
+     inkscape:cx="190.71545"
+     inkscape:cy="58.262263"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0.4"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     inkscape:window-x="-32000"
+     inkscape:window-y="-32000"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata850">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-9.7949575,-7.1006994)">
+    <path
+       d="M 108.64367,27.444863 H 13.442634 c -3.6011475,0 -6.5202896,-1.74659 -6.5202896,-3.90124 V 0.08330335 c 0,-2.15452205 2.9191421,-3.90111205 6.5202896,-3.90111205 h 95.201036 c 3.60093,0 6.52029,1.74659 6.52029,3.90111205 V 23.543623 c 0,2.15465 -2.91936,3.90124 -6.52029,3.90124"
+       id="path912"
+       style="fill:none;fill-opacity:1;stroke-width:0.26458332"
+       inkscape:connector-curvature="0" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot1469"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:1.25;font-family:'Swis721 Blk BT';-inkscape-font-specification:'Swis721 Blk BT';letter-spacing:0px;word-spacing:0px;fill:#4fc08d;fill-opacity:1;stroke:none"
+       transform="matrix(0.26458333,0,0,0.26458333,17.873959,-11.158651)"><flowRegion
+         id="flowRegion1471"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Swis721 Blk BT';-inkscape-font-specification:'Swis721 Blk BT';fill:#4fc08d;fill-opacity:1"><rect
+           id="rect1473"
+           width="393.01407"
+           height="124.39438"
+           x="46.873238"
+           y="59.605633"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Swis721 Blk BT';-inkscape-font-specification:'Swis721 Blk BT';fill:#4fc08d;fill-opacity:1" /></flowRegion><flowPara
+         id="flowPara1475"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:64px;font-family:'Swis721 Blk BT';-inkscape-font-specification:'Swis721 Blk BT';fill:#4fc08d;fill-opacity:1">REGISTRO</flowPara></flowRoot>    <path
+       inkscape:connector-curvature="0"
+       d="M 24.287646,25.93982 H 13.747509 c -2.179174,0 -3.9525515,-1.773382 -3.9525515,-3.952551 V 11.447133 c 0,-2.179173 1.7733775,-3.952551 3.9525515,-3.952551 h 6.587581 c 0.728589,0 1.31752,0.590246 1.31752,1.317515 0,0.72727 -0.588931,1.317521 -1.31752,1.317521 h -6.587581 c -0.72727,0 -1.31752,0.591565 -1.31752,1.317515 v 10.540136 c 0,0.72595 0.59025,1.317515 1.31752,1.317515 h 10.540137 c 0.72727,0 1.317515,-0.591565 1.317515,-1.317515 v -3.95255 c 0,-0.727269 0.588931,-1.317521 1.317515,-1.317521 0.728589,0 1.31752,0.590252 1.31752,1.317521 v 3.95255 c 0,2.179169 -1.773381,3.952551 -3.95255,3.952551 z"
+       id="path844"
+       style="fill:#666666;stroke-width:0.26458332" />
+    <path
+       inkscape:connector-curvature="0"
+       d="m 20.553799,20.449726 c -0.461111,0 -0.90777,-0.18315 -1.239784,-0.515149 l -3.515134,-3.513819 c -0.685106,-0.686427 -0.685106,-1.798409 0,-2.483521 0.686427,-0.686421 1.79841,-0.686421 2.486156,0 l 1.865603,1.866924 4.578372,-7.187054 c 0.470372,-0.848483 1.541492,-1.155465 2.389974,-0.683793 0.847163,0.471667 1.152831,1.541498 0.682474,2.38866 l -5.710118,9.222617 c -0.267454,0.482223 -0.745714,0.810274 -1.291168,0.88669 -0.08431,0.01344 -0.16338,0.01842 -0.24639,0.01842 z"
+       id="path850"
+       style="fill:#666666;stroke-width:0.26458332" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot1469-5"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:1.25;font-family:'Swis721 Blk BT';-inkscape-font-specification:'Swis721 Blk BT';letter-spacing:0px;word-spacing:0px;fill:#666666;fill-opacity:1;stroke:none"
+       transform="matrix(0.26458333,0,0,0.26458333,18.16824,0.65015262)"><flowRegion
+         id="flowRegion1471-5"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Swis721 Blk BT';-inkscape-font-specification:'Swis721 Blk BT';fill:#666666;fill-opacity:1"><rect
+           id="rect1473-0"
+           width="393.01407"
+           height="124.39438"
+           x="46.873238"
+           y="59.605633"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Swis721 Blk BT';-inkscape-font-specification:'Swis721 Blk BT';fill:#666666;fill-opacity:1" /></flowRegion><flowPara
+         id="flowPara1475-5"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.66666794px;font-family:'Swis721 Blk BT';-inkscape-font-specification:'Swis721 Blk BT';fill:#666666;fill-opacity:1">CALIFICADO</flowPara></flowRoot>  </g>
+</svg>

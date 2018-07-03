@@ -10,6 +10,8 @@ ruby RUBY_VERSION
 
 gem "jekyll"
 
+gem 'eventmachine', '1.0.9.1'
+
 gem "github-pages", group: :jekyll_plugins
 
 # If you have any plugins, put them here!

@@ -53,6 +53,9 @@ collections:  # process the _data folder
   organizers:
     output: false
     permalink: /:collection/
+  communities:
+    output: false
+    permalink: /:collection/
   sponsors:
     output: false
     permalink: /:collection/
