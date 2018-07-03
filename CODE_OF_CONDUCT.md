@@ -76,6 +76,6 @@ hola@djangocolombia.com
 
 Este Código de conducta se distribuye bajo una [Licencia Creative Commons de Atribución-Compartir] (http://creativecommons.org/licenses/by-sa/3.0/).
 
-Partes del texto derivadas del [Código de Conducta de Django] (https://www.djangoproject.com/conduct/) y la [Política de Anti-Acoso del Feminismo Geek] (http://geekfeminism.wikia.com/wiki/Conference_anti-harassment/Policy).
+Partes del texto derivadas del [Código de Conducta de Django](https://www.djangoproject.com/conduct/) y la [Política de Anti-Acoso del Feminismo Geek](http://geekfeminism.wikia.com/wiki/Conference_anti-harassment/Policy).
 
 Obtenido el 22 de noviembre de 2016 de [http://citizencodeofconduct.org/](http://citizencodeofconduct.org/)
