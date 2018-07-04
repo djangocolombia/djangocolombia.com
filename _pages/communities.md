@@ -2,7 +2,7 @@
 layout: base
 title: Comunidades
 heading: Comunidades
-permalink: /Comunidades/
+permalink: /comunidades/
 description: Encuentra la comunidad de tu ciudad.
 ---
 
